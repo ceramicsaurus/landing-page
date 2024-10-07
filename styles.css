@@ -1,0 +1,132 @@
+html {
+    background-image: url("https://i.pinimg.com/736x/32/51/54/3251549cd1279eb6a291384d79730d8c.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Afacad'
+}
+
+body {
+    width: 100%;
+}
+
+.calltoaction {
+    background-color: #FEE12E;
+    font-size: 30px;
+    border: 5px solid rgba(255, 0, 0, 0);
+    padding: 16px 32px;
+    font-family: 'Afacad';
+}
+
+.calltoaction:hover {
+    background-color: rgba(255, 0, 0, 0);
+    border: 5px solid #FEE12E;
+}
+
+#duck1 {
+    width: 750px;
+}
+
+.left1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 150px;
+}
+
+#duck2 {
+    width: 300px;
+}
+
+#text2 {
+    font-size: 25px;
+    padding: 0 50px 0 0;
+}
+
+.right2 {
+    text-align: center;
+}
+
+/* AUTOSCROLL */
+
+.autoscroll {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 0 20px 0 0;
+}
+
+.autoscroll:before, .autoscroll:after {
+	content: "";
+	position: absolute;
+	height: 130px;
+	width: 150px;
+	z-index: 2;
+}
+
+.autoscroll:after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.autoscroll:before {
+	left: 0;
+	top: 0;
+}
+
+.autoscroll .track {
+	display: flex;
+	width: calc(150px * 10);
+	animation: scroll 25s 0.5s linear infinite;
+}
+
+.scrollimg {
+    width: 300px;
+    height: 300px;
+}
+
+
+@keyframes  scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-100px * 5));
+	}
+}
+
+/* FLEXBOX STUFF */
+/* intro */
+.columns1 {
+    display: flex;
+}
+
+.left1 {
+    flex: 1 1 auto;
+}
+
+.right1 {
+    flex: 1 1 auto;
+    max-width: 50%;
+}
+
+.columns2 {
+    display: flex;
+}
+
+.scroll1, .scroll2, .scroll3, .scroll4, .scroll5 {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.scrollleft {
+    flex: 1 1 auto;
+}
+
+.scrollright {
+    flex: 1 1 auto;
+}
+
+track {
+    display: flex;
+}
